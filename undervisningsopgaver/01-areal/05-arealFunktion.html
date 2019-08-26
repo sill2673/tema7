@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="">
 </head>
 
-
 <body>
 
     <p>Hvad er længden?</p>
@@ -24,24 +23,17 @@
 
         function button_clicked() {
             let længde = document.querySelector("#længde").value;
-            let bredde = document.querySelector("#bredde").value;;
-            let areal = længde * bredde;
+            let bredde = document.querySelector("#bredde").value;
+            //            let areal = længde * bredde;
 
-            let resultat = 'Arealet er $(areal) kvadratmeter';
+            let resultat = 'Arealet er $(areal(længde, bredde)) kvadratmeter';
 
-            console.log(areal);
+            console.log(resultat);
         }
 
-        /*
-        let længde = 3;
-        let bredde = 5;
-        let areal = længde * bredde;
-
-        console.log(areal);
-*/
+        function areal(l, b) {
+            return (l * b);
+        }
     </script>
-
-
-
 
 </body></html>
