@@ -1,0 +1,47 @@
+
+               <!DOCTYPE html>
+
+               <html lang="da">
+
+               <head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div id="content">
+        <div>
+            <a href="https://kea.dk/">TRYK HER FOR AT KOMME TIL HJEMMESIDEN!</a>
+        </div>
+        <div>
+            <a href="https://github.com/sill2673/tema7/tree/master/undervisningsopgaver">TRYK HER FOR AT KOMME TIL MIN GITHUB!</a>
+        </div>
+        <div>
+            <img src="http://mabe-kea.dk/E19/pics/frog.png">
+        </div>
+    </div>
+
+
+    <script>
+        content content = document.querySelector("#content");
+        content første = document.querySelector("#content div a");
+        content anden = document.querySelector("#content div:nth-child(2)");
+        content sidste = document.querySelector("#content img");
+
+
+        content.innerHTML = "<h1>link til keas hjemmeside</h1>";
+
+        console.log(content);
+        console.log(første);
+        console.log(anden);
+        console.log(sidste);
+    </script>
+
+</body></html>
+
+
+
