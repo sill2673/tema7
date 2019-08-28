@@ -7,9 +7,9 @@
 
     <style>
         .firkant {
-            height: 100px;
-            width: 100px;
-            line-height: 100px;
+            height: 200px;
+            width: 200px;
+            line-height: 260px;
             text-align: center;
             background-color: green;
         }
@@ -17,7 +17,7 @@
         .cirkel {
             height: 200px;
             width: 200px;
-            line-height: 100px;
+            /*            line-height: 260px;*/
             border-radius: 50%;
             text-align: center;
             background-color: red;
@@ -35,11 +35,11 @@
     <script>
         let firkantURL = 'http://mabe-kea.dk/E19/pics/frog.png';
         let cirkelURL = 'http://mabe-kea.dk/E19/pics/pig.png';
-        let cirkel1URL = 'http://mabe-kea.dk/E19/pics/fox.png';
+        let foxURL = 'http://mabe-kea.dk/E19/pics/fox.png';
 
         document.querySelector(".firkant").innerHTML = `<img src = ${firkantURL} alt= 'grøn frø'> `;
         document.querySelector(".cirkel").innerHTML = ` <img src = ${cirkelURL} alt= "lyserød gris"> `;
-        document.querySelector(".cirkel1").innerHTML = ` <img src = ${cirkelURL} alt= "grå ræv"> `;
+        document.querySelector(".cirkel").innerHTML += ` <img src = ${foxURL} alt= "ræv">`;
     </script>
 
 
