@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+</head>
+
+<body>
+
+    <article id="dyr">
+
+        <h1></h1>
+        <p></p>
+        <p1></p1>
+        <img src="" alt="">
+
+    </article>
+
+    <script>
+        //        document.addEventListener("DOMContentLoaded", visDyr);
+        let dyr = [{
+                "navn": "gris",
+                "type": "pattedyr",
+                "levested": "grisefarm",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+            },
+            {
+                "navn": "frø",
+                "type": "padde",
+                "levested": "moser",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png"
+            },
+            {
+                "navn": "sild",
+                "type": "fisk",
+                "levested": "havet",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.jpg"
+            },
+            {
+                "navn": "ræv",
+                "type": "rovdyr",
+                "levested": "skove",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png"
+            },
+            {
+                "navn": "krokodille",
+                "type": "rovdyr",
+                "levested": "grisefarm",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg"
+            },
+        ]
+
+
+        function start() {
+            const listevisning = document.querySelector("#liste");
+            dyr.forEach(dyr => {
+                listevisning.innerHTML += `<p> ${dyr.navn} ${dyr.type} ${dyr.levested} ${dyr.billede}<p>`
+            })
+        }
+
+        console.log(dyr);
+
+
+        //        const destination = document.querySelector("#dyr");
+        //        const fuldeTekst = `${dyr.gris} ${dyr.frø} ${dyr.sild} ${dyr.ræv} ${dyr.krokodille} `;
+        //
+        //        destination.querySelector("h1").textContent = fuldeTekst;
+        //        destination.querySelector("img").src = dyr.billede;
+    </script>
+</body></html>
